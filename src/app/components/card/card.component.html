@@ -1,0 +1,9 @@
+<div class="card">
+  <h3 class="title">{{ title }} ✨</h3>
+  <p class="desc">{{ description }} {{ title }} ✨</p>
+  <div class="tags">
+    <div *ngFor="let tag of tags">
+      <group-tag [tag]="tag.name"></group-tag>
+    </div>
+  </div>
+</div>

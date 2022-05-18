@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  margin: 4vh 0 0 3vw;
+}
+
+.card {
+  border: 1px solid #666666;
+  border-radius: 8px;
+  padding: 2.25vh 2vw;
+  width: 15vw;
+  margin-right: 1vw;
+  font-size: 0.92vw;
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.tag {
+  display: flex;
+  background-color: #4caf50;
+  justify-content: center;
+  color: white;
+  font-size: 0.75vw;
+  border-radius: 20px;
+  align-items: center;
+  margin-right: 1vw;
+  height: 2.5vh;
+  width: 7vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    border: 1px solid #666666;
+    border-radius: 8px;
+    padding: 0.5vh 2vw;
+    width: 85vw;
+    margin-bottom: 2vh;
+    font-size: 4.5vw;
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  .tag {
+    display: flex;
+    background-color: #4caf50;
+    justify-content: center;
+    color: white;
+    font-size: 2vw;
+    border-radius: 20px;
+    align-items: center;
+    margin-right: 1vw;
+    height: 3vh;
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    border: 1px solid #666666;
+    border-radius: 8px;
+    padding: 0.5vh 2vw;
+    width: 85vw;
+    margin-bottom: 2vh;
+
+    .tags {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+
+  .tag {
+    display: flex;
+    background-color: #4caf50;
+    justify-content: center;
+    color: white;
+    font-size: 3vw;
+    border-radius: 20px;
+    align-items: center;
+    margin-right: 1vw;
+    height: 4vh;
+    width: 30vw;
+  }
+}

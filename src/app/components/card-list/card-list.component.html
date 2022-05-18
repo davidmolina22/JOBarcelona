@@ -1,0 +1,11 @@
+<drag-scroll [scrollbar-hidden]="true" style="height: 80vh">
+  <div class="list">
+    <div *ngFor="let el of elements">
+      <card
+        [title]="el.title"
+        [description]="el.description"
+        [tags]="el.tags"
+      ></card>
+    </div>
+  </div>
+</drag-scroll>
