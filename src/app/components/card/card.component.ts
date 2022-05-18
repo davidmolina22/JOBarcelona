@@ -12,6 +12,11 @@ export class CardComponent implements OnInit {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() tags: Tag[] = [];
+  click: boolean = false;
 
   ngOnInit(): void {}
+
+  changeClicked() {
+    this.click = !this.click
+  }
 }

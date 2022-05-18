@@ -1,27 +1,32 @@
-# JOBarcelona
+# JOBarcelona FrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+Componente para ver una lista de grupos de regalos en modo de scroll horizontal (pc) y modo lista en versión móvil y tablet.
 
-## Development server
+## Usage
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Así luce el componente:
 
-## Code scaffolding
+![](./image.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## API/Component
 
-## Build
+El componente tiene un título, una descripción y varias tags. Es responsive: adopta un modo de scroll horizontal en PC y un modo lista para tablet y móvil. Los tags también son componentes independientes.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+Antes de ejecutar, hay que instalar algunos paquetes; por tanto, ejecutaremos :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm i
+```
 
-## Running end-to-end tests
+Y, para ejecutarlo (podemos usar cualquiera de los siguientes):
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm start
+ng serve
+```
 
-## Further help
+## License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+&copy; 2022 David Molina. [MIT](https://opensource.org/licenses/MIT).

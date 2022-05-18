@@ -1,4 +1,4 @@
-<div class="card">
+<div [ngClass]="{'card': true, 'clicked': click}" (click)="changeClicked()">
   <h3 class="title">{{ title }} ✨</h3>
   <p class="desc">{{ description }} {{ title }} ✨</p>
   <div class="tags">
